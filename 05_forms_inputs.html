@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="process.php">
+        <!-- Text input -->
+        <div>
+            <!-- for attribute of the id would highlight the input field -->
+            <label for="name">Name</label>
+            <!-- name attribute is used to grab the element value at server side -->
+            <!-- we can set the default value in the value field -->
+            <!-- Or we can use placeholder text to indicate the purpose of the input field -->
+            <input type="text" id="name" name="name" placeholder="Enter your name">
+        </div>
+        <br>
+        <!-- Email field -->
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" value="gkrish@gmail.com" >
+        </div>
+        <br>
+        <!-- Text area field -->
+        <div>
+            <label for="message">Message</label><br>
+            <textarea name="message" id="message" cols="50" row="5" placeholder="Type your message here"></textarea>
+        </div>
+        <br>
+        <!-- Options select field -->
+        <div>
+            <label for="sex">Sex</label>
+            <select name="sex" id="sex">
+                <!-- selected option is used for default selection on load -->
+                <option value="male" selected>Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <br>
+        <!-- Number input field -->
+        <div>
+            <label for="age">Age</label>
+            <input type="number" name="age" id="age">
+        </div>
+        <br>
+        <!-- Date input field -->
+        <div>
+            <label for="dob">Date of Birth</label>
+            <input type="date" name="dob" id="dob">
+        </div>
+        <br>
+        <!-- Radio buttons -->
+        <div>
+            <label for="member">Membership:</label>
+            <!-- Name should be same for all options in the radio buttons --> <br>
+            <!-- Checked will select the option on the page load -->
+            <input type="radio" name="member" checked value="Simple" id="member">Simple <br>
+            <input type="radio" name="member" value="Gold" id="member">Gold <br>
+            <input type="radio" name="member" value="Premium" id="member">Premium <br>
+        </div>
+        <br>
+        <!-- Checker box -->
+        <div>
+            <label for="likes">I like to...:</label>
+            <!-- Name should be same for all options in the radio buttons --> <br>
+            <!-- Checked will select the option on the page load -->
+            <input type="checkbox" name="likes" value="bikes" id="likes">Bikes <br>
+            <input type="checkbox" name="likes" value="cars" id="likes">Cars <br>
+            <input type="checkbox" name="likes" value="dogs" id="likes">Dogs <br>
+        </div>
+        <br>
+        <!-- Button field -->
+        <div>
+            <!-- Input submit -->
+            <input type="submit" value="Submit">
+            <!-- Using button submit-->
+            <!-- <button type="submit">Submit</button> -->
+            <button type="reset">Reset</button>
+        </div>
+    </form>
+</body>
+</html>
