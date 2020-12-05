@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div, Classes, ID and Span</title>
+    <style>
+        .card{
+            border: 1px solid green;
+            background: wheat;
+            padding: 20px;
+            margin-bottom: 10px;
+        }
+        .enhance{
+            color: yellow;
+            background-color: black;
+        }
+    </style>
+</head>
+<!-- Id should not be repeated we should have only one id in a page -->
+<!-- Class can be used in multiple place to style more elements in similar way -->
+<body>
+    <div id="main-header" class="card">
+        <h1>My website</h1>
+        <p>A site about me</p>
+    </div>
+    <ul id="main-nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">About</a></li>
+    </ul>
+    <div id="about" class="card">
+        <h3>About</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <span class="enhance"> Cum deserunt architecto assumenda</span> eos inventore qui hic quisquam fugiat? Minus voluptate ex dolorem beatae ratione, culpa hic eos mollitia sed quibusdam!</p>
+    </div>
+    <div id="contact" class="card">
+        <h3>Contact Me</h3>
+        <ul>
+            <li>Address: Cross main street</li>
+            <li>Phone: 991-9991-999</li>
+            <li>Email: me@email.com</li>
+        </ul>
+    </div>
+    <div id="footer">
+        <p>Copyright &copy; 2021</p>
+    </div>
+</body>
+</html>
